@@ -1,0 +1,209 @@
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+	
+}
+
+.rubrik {
+
+	margin: 100px 0 50px 0;
+	text-align: center;
+	
+}
+#filtrering {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-block: 20px;
+}
+
+#filtrering button {
+  border: 0;
+  background-color: #96968a;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 180px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.valgt {
+  background: #fce6ca;
+}
+
+.tojcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+	padding-inline: 40px;
+}
+#toj_article {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin: 0 auto;
+
+}
+
+#toj_article:hover {
+	cursor:pointer;
+}
+
+#toj_article .storrelse {
+	font-size: 1.4rem;
+	    font-family: playfair display;
+}
+
+#toj_article .pris {
+	    font-family: playfair display;
+	font-size: 2rem;
+}
+
+#toj_article p {
+  text-align: center;
+  line-height: 1.4;
+}
+
+#toj_article .title {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+	margin-block: 15px;
+	font-size: 25px
+}
+
+/* Produkt single */
+
+#tilbage {
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+}
+
+.luk {
+  border: 0;
+  background-color: #96968a;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 180px;
+}
+.indhold {
+  display: grid;
+  margin-bottom: 20px;
+    margin-top: 40px;
+}
+.title {
+	margin-block: 20px;
+	text-decoration: uppercase;
+	text-align:center
+	
+}
+
+.toj_single {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0 auto;
+}
+.single_billede {
+	display: flex;
+    justify-content: center;
+}
+.toj_single p {
+  margin-bottom: 0;
+	text-align:center
+  line-height: 1.8;
+}
+
+.toj_single img {
+  max-width: 100%;
+}
+
+.toj_single .storrelse {
+font-size: 1.4rem;
+font-family: playfair display;
+	text-align:center;
+}
+
+.toj_single .pris {
+font-family: playfair display;
+font-size: 2rem;
+	text-align:center;
+}
+
+.indhold .wp-image-1126 {
+	position: absolute;
+    right: 577px;
+    max-width: 85% !important;
+    bottom: 66px;
+    z-index: -50;
+}
+
+
+@media screen and (min-width: 600px) {
+	#filtrering {
+		padding-inline: 40px;
+	}
+	
+}
+
+@media screen and (min-width: 800px) {
+.rubrik {
+  text-align: left;
+	padding-left: 40px
+}
+	.tojcontainer {
+		grid-gap: 0;
+    
+}
+	
+	#toj_article {
+		padding-top: 30px;
+    padding-inline: 20px;
+	}
+	
+	#toj_article .title {
+		text-align: left;
+		
+	}
+	
+	#toj_article p {
+		text-align: left
+	}
+	
+	.single_tekst {
+		display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+	}
+
+.toj_single {
+	grid-template-columns: 1fr 1fr;
+   
+    display: grid;
+  }
+	
+	.title {
+		text-align:left;
+	}
+	
+	.toj_single p {
+		text-align: left
+	}
+	
+	.toj_single .storrelse {
+		text-align:left;
+	}
+	.toj_single .pris {
+		text-align:left;
+	}
+	.toj_single img {
+		max-width:65%;
+	}
+}
